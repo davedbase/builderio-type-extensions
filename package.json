@@ -1,6 +1,6 @@
 {
   "name": "builderio-field-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of TypeScript helpers for BuilderIO's SDK.",
   "main": "",
   "types": "index.d.ts",
@@ -12,11 +12,13 @@
   },
   "keywords": [
     "builder",
-    "builder.sdk",
-    "builderio"
+    "builder sdk",
+    "builderio",
+    "input fields",
+    "builder.io"
   ],
   "author": "David Di Biase",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/davedbase/builderio-field-types/issues"
   },
