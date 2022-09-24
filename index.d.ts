@@ -9,13 +9,13 @@
  * support for input field extraction.
  */
 
-type BuilderFields<T> = T extends object
+declare type BuilderFields<T> = T extends object
   ? T extends infer O
     ? { [K in keyof O]: BuilderFields<O[K]> }
     : never
   : T;
 
-type GenerateItem<T> = T extends { subFields: infer S extends readonly any[] }
+declare type GenerateItem<T> = T extends { subFields: infer S extends readonly any[] }
   ? GenerateItems<S>[]
   : T extends { type: infer Type extends string }
   ? Type extends "string"
@@ -40,7 +40,7 @@ type GenerateItem<T> = T extends { subFields: infer S extends readonly any[] }
     : never
   : never;
 
-type GenerateItems<T extends readonly any[]> = {
+declare type GenerateItems<T extends readonly any[]> = {
   [K in keyof T & `${bigint}` as T[K] extends {
     name: infer N extends string;
     required?: false;

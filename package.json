@@ -1,7 +1,12 @@
 {
   "name": "builderio-type-extensions",
-  "version": "1.1.0",
-  "description": "A set of TypeScript helpers for BuilderIO's SDK.",
+  "version": "1.1.1",
+  "author": "David Di Biase",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davedbase/builderio-field-types/issues"
+  },
+  "description": "A set of TypeScript helpers for Builder.io's SDK.",
   "main": "",
   "types": "index.d.ts",
   "typeScriptVersion": "4.8",
@@ -17,11 +22,8 @@
     "input fields",
     "builder.io"
   ],
-  "author": "David Di Biase",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/davedbase/builderio-field-types/issues"
-  },
   "homepage": "https://github.com/davedbase/builderio-field-types#readme",
-  "dependencies": {}
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
 }

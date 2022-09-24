@@ -63,7 +63,7 @@ function MyComponent(props: InputProps) => {
 
 - `1.0.0` - Initial release
 - `1.0.1` - Fixed packaging module issues
-- `1.1.0` - Improved formatting, adding required fields, added string enums
+- `1.1.1` - Improved formatting, adding required fields, added string enums
 
 ### Acknowledgments
 
