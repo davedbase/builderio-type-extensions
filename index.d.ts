@@ -15,7 +15,9 @@ declare type BuilderFields<T> = T extends object
     : never
   : T;
 
-declare type GenerateItem<T> = T extends { subFields: infer S extends readonly any[] }
+declare type GenerateItem<T> = T extends {
+  subFields: infer S extends readonly any[];
+}
   ? GenerateItems<S>[]
   : T extends { type: infer Type extends string }
   ? Type extends "string"
